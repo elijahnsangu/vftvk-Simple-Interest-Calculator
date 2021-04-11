@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <h1>Simple Interest Calculator</h1>
-        <form id="formCalc">
+        <form id="formCalc" onclick="return checkdata()">
             <div class="row">
                 <div class="col-25">
                     <label for="amount"><b>Amount:</b></label>
@@ -26,9 +26,9 @@
                     <label for="rate"><b>Interest Rate:</b></label>
                 </div>
                 <div class="col-75">
-                    <input type="range" name="rangeInput" id="rangeInput" min="0" max="5" step="0.5" value="0"
+                    <input type="range" name="rangeInput" id="rangeInput" min="1" max="20" step="0.5" value="1"
                         oninput="rateamount.value=rangeInput.value">
-                    <span> <output name="rateamount" id="rateamount" for="rangeInput">0</output><span>%</span></span>
+                    <span> <output name="rateamount" id="rateamount" for="rangeInput">1</output><span>%</span></span>
                 </div>
             </div>
             <div class="row">
@@ -41,7 +41,12 @@
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
-                        <option value="5">5</option>
+                        <option value="6">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
                     </select>
                 </div>
             </div>
